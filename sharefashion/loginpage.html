@@ -31,7 +31,7 @@
     <div class="wrapper">
     <!-- NAVBAR
 ================================================== -->
-   <div class="navbar navbar-fixed-top">
+   <div id="navbar-example" class="navbar navbar-fixed-top">
       <div class="container">
 
       <div class="navbar-header">
@@ -41,127 +41,37 @@
             </button>
                     
                     <a class="navbar-brand" href="homepage.html">
-                        <img id="logo-header" src="images/logo.png" alt="Logo">
+                        <img id="logo-header" src="images/new1.png" alt="Logo">
                     </a>
         </div>        
-                 <!--<div class="pull-right header-inner-right">
+                 <div class="pull-right header-inner-right">
                         <ul class="list-inline">
-                            <li class="menu-icons">
-                                <i class="menu-icons-style radius-x fa fa-user"><a href="#">Login</a></i>
+                            <li>
+                                <!--<i class="menu-icons-style radius-x fa fa-user"><a href="loginpage.html">Login</a></i>-->
+                                <a href="loginpage.html" class="btn btn-default btn-user btn-user-dark"><i class="fa fa-user"></i>Login</a>
                             </li>
-                            <li class="menu-icons">
-                                <i class="menu-icons-style search search-close search-btn fa fa-lock"><a href="#">Signup</a></i>
+
+                            <li>
+                                <a href="signup.html" class="btn btn-default btn-user"><i class="fa fa-lock"></i>Signup</a>
+
+                                <!--<i class="menu-icons-style search search-close search-btn fa fa-lock"><a href="signup.html">Signup</a></i>-->
                             </li>
                         </ul>    
-                    </div>-->
+                    </div>
               
             <div class="navbar-collapse collapse navbar-responsive-collapse navbar-fixed">
-             <!-- <ul class="list-inline pull-right">
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal1">Sign Up</button>
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Login</button>
-              </ul>-->
+             
               
               <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#Features" class="smoothScroll">Features</a></li>
+                <li><a href="#Works" class="smoothScroll">How It Works</a></li>
+                <li><a href="#Products" class="smoothScroll">Products</a></li>
+                <li><a href="#Contact">Contact</a></li>
                 </ul>
 
             
-             
-   <!--<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h2 class="modal-title" id="myModalLabel">Register a new account</h2>
-      </div>
-      <div class="modal-body">
-       <form class="reg-page">
-                    
-
-                    <label>First Name</label>
-                    <input type="text" class="form-control margin-bottom-20">
-                   
-                    <label>Last Name</label>
-                    <input type="text" class="form-control margin-bottom-20">
-                   
-                    <label>Email Address <span class="color-red">*</span></label>
-                    <input type="text" class="form-control margin-bottom-20">
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <label>Password <span class="color-red">*</span></label>
-                            <input type="password" class="form-control margin-bottom-20">
-                        </div>
-                        <div class="col-sm-6">
-                            <label>Confirm Password <span class="color-red">*</span></label>
-                            <input type="password" class="form-control margin-bottom-20">
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-lg-6 checkbox">
-                            <label>
-                                <input type="checkbox"> 
-                                I read <a href="page_terms.html" class="color-green">Terms and Conditions</a>
-                            </label>                        
-                        </div>
-                        <div class="col-lg-6 text-right">
-                            <button class="btn-u" type="submit">Register</button>                        
-                        </div>
-                    </div>
-                </form>
-      </div>
-    
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h2 class="modal-title" id="myModalLabel">Login to your account</h2>
-      </div>
-      <div class="modal-body"> 
-       <form class="reg-page">
-
-                    <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                        <input type="text" placeholder="Username" class="form-control">
-                    </div>                    
-                    <div class="input-group margin-bottom-20">
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                        <input type="password" placeholder="Password" class="form-control">
-                    </div>                    
-
-                    <div class="row">
-                        <div class="col-md-6 checkbox">
-                            <label><input type="checkbox"> Stay signed in</label>                        
-                        </div>
-                        <div class="col-md-6">
-                            <button class="btn-u pull-right" type="submit">Login</button>                        
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <h4>Forget your Password ?</h4>
-                    <p>no worries, <a class="color-green" href="#">click here</a> to reset your password.</p>
-                </form>
-
-      </div>
-    
-    </div>
-  </div>
-</div>-->
-
+            
           
               
             </div>
@@ -301,6 +211,7 @@
     <!--<script src="bootstrap-3.3.1/dist/js/bootstrap.min.js"></script>-->
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/home.js"></script>
 
   </body>
 </html>

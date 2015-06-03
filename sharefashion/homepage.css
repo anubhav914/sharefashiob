@@ -42,6 +42,21 @@ body {
   /* border-width: 0 0 1px; */
   background-color: rgba(231, 76, 60, 0.79);
 }
+.navbar.shrink {
+ height: 80px;
+ background-color: rgba(231, 28, 77, 1);
+ transition: all 0.4s ease;
+}
+
+.navbar.shrink .navbar-brand>img {
+height: 50px;
+  width: 100px;
+}
+.navbar.shrink .pull-right{
+  line-height: 0px;
+}
+
+
 .header .navbar-toggle, .header .navbar-toggle:hover, .header .navbar-toggle:focus {
  color: #333;
   border: none;
@@ -79,8 +94,22 @@ body {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
 }
-.nav>li>a:focus, .nav>li>a:hover {
+.nav>li>a{
+
+padding: 0px 15px; 
+display: inline; 
+}
+
+.navbar.shrink .navbar-fixed .nav>li>a:focus, .nav>li>a:hover {
   text-decoration: none;
+  background-color: #F05363;
+  
+}
+
+
+.navbar .navbar-fixed .nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: #EC7164;
   
 }
 .navbar-form{
@@ -768,3 +797,154 @@ i.icon-bg-u {
   background: #72c02c;
 }
 
+/* how it works*/
+
+.ih-item {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item,
+.ih-item * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ a {
+  color: #333;
+}
+ a:hover {
+  text-decoration: none;
+}
+ img {
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.circle .img {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  
+}
+.circle.dotted-border1{
+  border-radius: 50%;
+  border: 2px dashed;
+  box-shadow: 0 0 0 4px #F05363, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.circle.dotted-border2{
+  border-radius: 50%;
+  border: 2px dashed;
+ box-shadow: 0 0 0 4px #91D1C3, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.circle.dotted-border3{
+  border-radius: 50%;
+  border: 2px dashed;
+  box-shadow: 0 0 0 4px #F5DF7F, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+
+.circle .img:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /*box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);*/
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.circle .img img {
+  border-radius: 50%;
+}
+.circle .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.circle.effect5 {
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+}
+.circle.effect5.colored .info .info-back {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+.circle.effect5 .info {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.circle.effect5 .info .info-back {
+  visibility: hidden;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.circle.effect5 .info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.circle.effect5 .info p {
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.circle.effect5 a:hover .info {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+  -moz-transform: rotate3d(0, 1, 0, -180deg);
+  -ms-transform: rotate3d(0, 1, 0, -180deg);
+  -o-transform: rotate3d(0, 1, 0, -180deg);
+  transform: rotate3d(0, 1, 0, -180deg);
+}
+.circle.effect5 a:hover .info .info-back {
+  visibility: visible;
+}
+
+
+/*hiw*/

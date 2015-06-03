@@ -19,7 +19,8 @@
      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
      <link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.min.css">
      <link href="homepage.css" rel="stylesheet">
-    <link href="css/ihover.css" rel="stylesheet">
+     
+    <!--<link href="css/ihover.css" rel="stylesheet">-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,10 +29,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+  
   <body>
     <!-- NAVBAR
 ================================================== -->
-   <div class="navbar navbar-fixed-top">
+   <div id="navbar-example" class="navbar navbar-fixed-top">
       <div class="container">
 
       <div class="navbar-header">
@@ -63,11 +65,11 @@
              
               
               <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#Features" class="smoothScroll">Features</a></li>
+                <li><a href="#Works" class="smoothScroll">How It Works</a></li>
+                <li><a href="#Products" class="smoothScroll">Products</a></li>
+                <li><a href="#Contact">Contact</a></li>
                 </ul>
 
             
@@ -136,12 +138,13 @@
        
    <!-- Marketing messaging and featurettes
     ================================================== -->
-     <div id="content">
+    <div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="smoothScroll">
+     
      
       <!--<div class="container">-->
       <!--features-->
 
-      <div class="cotainer-fluid infographic">
+      <div id= "Features" class="cotainer-fluid infographic">
                  <div class="row text-center"><p></p><h1> FEATURES </h1><p></p>
 
                 </div>
@@ -185,7 +188,7 @@
             </div> 
             <!--Features-->
       
-       <div class="cotainer-fluid infographic2">
+       <div id="Works"class="cotainer-fluid infographic2">
                  <div class="row text-center"><p></p><h1> HOW IT WORKS </h1><p></p>
 
                 </div>
@@ -232,15 +235,15 @@
 
 
         <!-- How It works -->
-     <!-- <div class="container-fluid infographic2">
+   <!-- <div class="container-fluid infographic2">
                  <div class="row text-center"><p></p><h1> How It Works </h1><p></p>
 
                 </div>
                 <div class="row">
-                <div class="col-md-2 col-md-offset-2 text-center" style="padding:20px;">
+                <div class="col-md-4 text-center" style="padding:20px;">
 
-<div class="ih-item circle effect5"><a href="#">
-        <div class="img"><img src="images/Click your closet .png" class="border-info img-responsive img-circle hcenter" style="padding:0px;" alt="img"></div>
+<div class="circle effect5"><a href="#">
+        <img src="images/Click your closet .png" class="effect5 border-info img-responsive img-circle hcenter" style="padding:0px;" alt="img">
         <div class="info">
           <div class="info-back">
             <h3>Click Your Closet</h3>
@@ -282,7 +285,7 @@
             </div>--><!-- How it works -->
     
    
-             <div class="container-fluid infographic3">
+             <div id="Products" class="container-fluid infographic3">
                 <div class="row text-center"><p></p><h1> Featured Products </h1><p></p>
 
                 </div>
@@ -307,7 +310,7 @@
 
 </div>
 
-             
+</div>             
          
          <div class="footer-v1">
         <div class="footer">
@@ -445,6 +448,9 @@
     <!--<script src="bootstrap-3.3.1/dist/js/bootstrap.min.js"></script>-->
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/home.js"></script>
+
 
   </body>
 </html>
